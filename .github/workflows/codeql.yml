@@ -45,6 +45,8 @@ jobs:
         sudo apt-get update
         sudo apt-get -y install glibc-source
         sudo apt-get install flex-old bison libncurses5-dev libncursesw5-dev
+        ./configure
+        make
 
   
     - name: Perform CodeQL Analysis

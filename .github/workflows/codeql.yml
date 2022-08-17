@@ -47,8 +47,9 @@ jobs:
         sudo apt-get install flex-old bison libncurses5-dev libncursesw5-dev
         sudo apt-get install miscfiles
         ./configure
+        ls -nt /usr/share/dict/words
         make
-        make check
+   
 
   
     - name: Perform CodeQL Analysis
